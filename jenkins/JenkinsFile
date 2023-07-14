@@ -3,8 +3,7 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                echo "build started"
-                echo "end end ebd"
+                ng build --configuration=production --base-href=/vb/
             }
         }
     }
