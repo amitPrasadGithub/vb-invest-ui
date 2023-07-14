@@ -1,0 +1,43 @@
+[
+  {
+    "formId": "portfolio-stocks-form",
+    "data": {},
+    "add": {
+      "position": ["stockName", "investedAmount", "quantity"],
+      "columns": {
+        "stockName": {
+          "inputType": "text",
+          "label": "Stock Name",
+          "isRequiredField": true,
+          "isDisabledField": false,
+          "tooltipValue": "Stock name",
+          "tooltipIconRequired": true,
+          "value": "",
+          "show": true
+        },
+        "investedAmount": {
+          "inputType": "number",
+          "label": "Invested Amount",
+          "isRequiredField": true,
+          "isDisabledField": false,
+          "tooltipValue": "Invested amount",
+          "tooltipIconRequired": true,
+          "value": "",
+          "show": true
+        },
+        "quantity": {
+          "inputType": "number",
+          "label": "Quantity",
+          "isRequiredField": true,
+          "isDisabledField": false,
+          "tooltipValue": "Quantity",
+          "tooltipIconRequired": true,
+          "value": "",
+          "show": true
+        }
+      }
+    },
+    "edit": {},
+    "detail": {}
+  }
+]
