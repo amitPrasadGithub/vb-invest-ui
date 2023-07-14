@@ -3,8 +3,9 @@ pipeline {
     stages {
         stage("build") {
             steps {
-              bash "echo hello"  
-              bash "ng build --configuration=production --base-href=/vb/"
+              sh "echo hello"  
+              sh "ng build --configuration=production --base-href=/vb/"
+              sh "echo hello"
             }
         }
     }
