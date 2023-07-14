@@ -1,0 +1,45 @@
+[
+    {
+        "componentList": ["PortfolioStocksComponent"],
+        "components": {
+            "PortfolioStocksComponent": {
+                "displayedColumns": ["stockName", "investedAmount", "quantity" ],
+                "columnConfiguration": {
+                    "stockName": {
+                        "label": "Name"
+                    },
+                    "investedAmount": {
+                        "label": "InvestedAmount"
+                    },
+                    "quantity": {
+                        "label": "Qty"
+                    }
+                },
+                "columnRouteConfiguration": {
+                    "stockName": {
+                        "enabled": true,
+                        "redirect": "/stocks"
+                    },
+                    "investedAmount": {
+                        "enabled": false
+                    },
+                    "quantity": {
+                        "enabled": false
+                    }
+                }
+            }
+        }
+    },
+    {
+        "componentList": ["TableComponent"],
+        "components": {
+             "TableComponent": {
+                "columnRouteStyle": {
+                    "cursor": "pointer",
+                    "color": "#285bc5",
+                    "text-decoration": "underline"
+                }
+             }
+        }
+    }
+]

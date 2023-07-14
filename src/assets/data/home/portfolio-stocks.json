@@ -1,0 +1,32 @@
+[
+    {
+        "stockName": "DABUR",
+        "investedAmount": "32093.75",
+        "quantity": 60
+    },
+    {
+        "stockName": "INFY",
+        "investedAmount": "19078.70",
+        "quantity": 15
+    },
+    {
+        "stockName": "MARICO",
+        "investedAmount": "21980.45",
+        "quantity": 45
+    },
+    {
+        "stockName": "TATAPOWER",
+        "investedAmount": "9908.50",
+        "quantity": 50
+    },
+    {
+        "stockName": "TATASTEEL",
+        "investedAmount": "10626.15",
+        "quantity": 80
+    },
+    {
+        "stockName": "TCS",
+        "investedAmount": "9431.75",
+        "quantity": 3
+    }
+]
