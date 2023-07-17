@@ -8,7 +8,6 @@ pipeline {
             steps {
                 deleteDir()
                 sh "chmod -R 777 ${env.WORKSPACE}"
-                sh whoami
                 sh "echo ${branch}"
                 sh pwd
                 sh "mkdir vb-invest-ui"
