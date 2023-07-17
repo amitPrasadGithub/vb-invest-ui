@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage("build") {
             steps {
-                echo "Hi there" >> /tmp/jenkinsFile.txt
+                sh "echo Hi there > /tmp/jenkins.txt"
                 sh "ng build --configuration=production --base-href=/vb/"
             }
         }
