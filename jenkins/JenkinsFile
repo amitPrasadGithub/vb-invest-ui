@@ -6,6 +6,7 @@ pipeline {
     stages {
         stage("build") {
             steps {
+                deleteDir()
                 sh "echo ${branch}"
                 sh pwd
                 sh "mkdir vb-invest-ui"
