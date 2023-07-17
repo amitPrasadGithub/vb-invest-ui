@@ -7,6 +7,7 @@ pipeline {
         stage("build") {
             steps {
                 deleteDir()
+                sh "chmod -R +x ${env.WORKSPACE}"
                 sh "echo ${branch}"
                 sh pwd
                 sh "mkdir vb-invest-ui"
