@@ -7,7 +7,13 @@ pipeline {
         stage("build") {
             steps {
                 sh "echo ${branch}"
-                sh "echo ## Bingo ##"
+                sh "mkdir vb-invest-ui"
+                dir("vb-invest-ui")
+                deleteDir()
+                sh "git clone https://github.com/amitPrasadGithub/vb-invest-ui.git"
+                dir ("vb-invest-ui")
+                sh "npm install"
+                sh "ng build --configuration=production"
             }
         }
     }
