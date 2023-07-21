@@ -1,22 +1,16 @@
 pipeline {
-    agent any 
-    environment {
-        def branch = "${env.GIT_BRANCH}"
+    agent {
+        kubernetes {
+            defaultContainer 'nodejs-container'
+            yamlFile 'nodejs-pod.yaml'
+        }
     }
     stages {
-        stage("build") {
+        stage("Kubernetes Test") {
             steps {
-                deleteDir()
-                sh "chmod -R 777 ${env.WORKSPACE}"
-                sh "echo ${branch}"
-                sh pwd
-                sh "mkdir vb-invest-ui"
-                dir("vb-invest-ui")
-                deleteDir()
-                sh "git clone https://github.com/amitPrasadGithub/vb-invest-ui.git"
-                dir ("vb-invest-ui")
-                sh "npm install"
-                sh "ng build --configuration=production"
+                sh '''
+                    node --version
+                '''
             }
         }
     }
