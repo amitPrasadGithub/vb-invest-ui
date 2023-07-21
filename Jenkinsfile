@@ -1,10 +1,16 @@
 pipeline {
-    agent any 
+    agent {
+        kubernetes {
+            defaultContainer 'nodejs-container'
+            yamlFile 'nodejs-pod.yaml'
+        }
+    }
     stages {
-        stage("build") {
+        stage("Kubernetes Test") {
             steps {
-                echo "build started"
-                echo "end"
+                sh '''
+                    node --version
+                '''
             }
         }
     }
